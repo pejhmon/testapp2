@@ -2,7 +2,7 @@
 
 /**
  * dbconnection contains all of the connection functions required for the application.
- *
+ * 
  * @version 1.0
  * @author pejhmon
  */
