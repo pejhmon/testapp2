@@ -13,10 +13,9 @@ $dbname = "testdb1";
 $serverAdmin = "app";
 $serverPassword = "Admin12£";
 
-//$dbpwd = iconv('','UTF-8',$serverPassword);
-$dbid = $serverAdmin . "@" . $serverName;
+$serverID = $serverAdmin . "@" . $serverName;
 $server = "tcp:" . $serverName . ".database.windows.net,1433";
-$connectionOptions = array( "Database"=>$dbname, "UID"=>$dbid, "PWD"=>$serverPassword);
+$connectionOptions = array( "Database"=>$dbname, "UID"=>$serverID, "PWD"=>$serverPassword);
 $conn = sqlsrv_connect($server, $connectionOptions);
 if($conn == false) {
     echo 'Connection failed. ';
