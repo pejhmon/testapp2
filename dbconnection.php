@@ -8,10 +8,10 @@
  */
 
 // Server details
-$serverName = "appetite";
-$dbname = 'testdb1';
+$serverName = "js0lt0fmek";
+$dbname = "appDB";
 $serverAdmin = "app";
-$serverPassword = "Admin12£"
+$serverPassword = "Admin12£";
 
 $dbpwd = iconv('','UTF-8',$serverPassword);
 $dbid = $serverAdmin."@".$serverName;
