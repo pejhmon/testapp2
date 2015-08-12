@@ -6,10 +6,11 @@
  * @version 1.0
  * @author pejhmon
  */
+
+$serverName = "tcp:appetite.database.windows.net,1433";
 $dbname = 'testdb1';
 $dbid = "app@appetite";
-$dbpwd = iconv('','UTF-8','Admin12£');
-$serverName = "tcp:appetite.database.windows.net,1433";
+$dbpwd = iconv('','UTF-8','Admin12Â£');
 
 $connectionOptions = array( "Database"=>$dbname, "UID"=>$dbid, "PWD"=>$dbpwd);
 $conn = sqlsrv_connect($serverName, $connectionOptions);
