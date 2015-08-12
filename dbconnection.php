@@ -5,10 +5,11 @@
  *
  * @version 1.0
  * @author pejhmon
+ * 
  */
 $dbname = 'testdb1';
 $dbid = "app@appetite";
-$dbpwd = iconv('','UTF-8','Admin12£');
+$dbpwd = iconv('','UTF-8','Admin12Â£');
 $serverName = "tcp:appetite.database.windows.net,1433";
 
 $connectionOptions = array( "Database"=>$dbname, "UID"=>$dbid, "PWD"=>$dbpwd);
