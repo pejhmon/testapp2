@@ -8,14 +8,14 @@
  */
 
 // Server details
-$serverName = "js0lt0fmek";
-$dbname = "appDB";
+$serverName = "appetite";
+$dbname = "testdb1";
 $serverAdmin = "app";
 $serverPassword = "Admin12£";
 
 $dbpwd = iconv('','UTF-8',$serverPassword);
-$dbid = $serverAdmin."@".$serverName;
-$server = "tcp:".$serverName.".database.windows.net,1433";
+$dbid = $serverAdmin . "@" . $serverName;
+$server = "tcp:" . $serverName . ".database.windows.net,1433";
 $connectionOptions = array( "Database"=>$dbname, "UID"=>$dbid, "PWD"=>$dbpwd);
 $conn = sqlsrv_connect($server, $connectionOptions);
 if($conn == false) {
