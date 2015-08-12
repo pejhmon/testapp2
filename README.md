@@ -4,7 +4,7 @@ This is a very simple PHP application that connects to an Azure SQL database. It
 
 ## Database connection information
 
-The database connection information is stored in dbconnection.php and uses the following information:
+The database connection information is stored in **dbconnection.php** and uses the following information:
 * The server name, under "$serverName"
 * The database name, under "$dbname"
 * The server administrator login, under "$serverAdmin"
