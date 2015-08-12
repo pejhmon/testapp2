@@ -13,13 +13,13 @@ $dbname = "testdb1";
 $serverAdmin = "app";
 $serverPassword = "Admin12£";
 
-$dbpwd = iconv('','UTF-8',$serverPassword);
+//$dbpwd = iconv('','UTF-8',$serverPassword);
 $dbid = $serverAdmin . "@" . $serverName;
 $server = "tcp:" . $serverName . ".database.windows.net,1433";
-$connectionOptions = array( "Database"=>$dbname, "UID"=>$dbid, "PWD"=>$dbpwd);
+$connectionOptions = array( "Database"=>$dbname, "UID"=>$dbid, "PWD"=>$serverPassword);
 $conn = sqlsrv_connect($server, $connectionOptions);
 if($conn == false) {
-    echo 'Connection failed';
+    echo 'Connection failed. ';
     die(print_r(sqlsrv_errors(), true));
 }
 
