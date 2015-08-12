@@ -7,13 +7,14 @@
  * @author pejhmon
  */
 
-$serverName = "tcp:appetite.database.windows.net,1433";
+$serverName = "appetite";
 $dbname = 'testdb1';
-$dbid = "app@appetite";
+$dbid = "app@".$serverName;
 $dbpwd = iconv('','UTF-8','Admin12£');
 
+$server = "tcp:".$serverName.".database.windows.net,1433";
 $connectionOptions = array( "Database"=>$dbname, "UID"=>$dbid, "PWD"=>$dbpwd);
-$conn = sqlsrv_connect($serverName, $connectionOptions);
+$conn = sqlsrv_connect($server, $connectionOptions);
 if($conn == false) {
     echo 'Connection failed';
     die(print_r(sqlsrv_errors(), true));
