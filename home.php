@@ -6,9 +6,9 @@ require_once 'dbconnection.php';
 // REST import
 $jsonURL = file_get_contents("https://nhs-json.azurewebsites.net/rest.json");
 $json = json_decode($jsonURL, true);
-echo $json['ServerName'];
-echo $json['ServerAdmin'];
-echo $json['ServerPassword'];
+echo $json['Server']['Name'];
+echo $json['Server'][Admin];
+echo $json[Server][Password];
 echo "Complete Dickhead";
 ?>
 
