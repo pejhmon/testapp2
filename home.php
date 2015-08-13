@@ -9,6 +9,7 @@ $json = json_decode($jsonURL, true);
 echo $json['ServerName'];
 echo $json['ServerAdmin'];
 echo $json['ServerPassword'];
+echo "Complete Dickhead";
 ?>
 
 <html>
