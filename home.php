@@ -9,7 +9,7 @@ $json = json_decode($jsonURL, true);
 echo $json['Server']['Name'];
 echo $json['Server'][Admin];
 echo $json[Server][Password];
-echo "Complete Dickhead";
+//echo "Complete Dickhead";
 echo $jsonURL;
 
 foreach ($jsonIterator as $key => $val) {
@@ -19,7 +19,7 @@ foreach ($jsonIterator as $key => $val) {
         echo "$key => $val\n";
     }
 }
-echo "Dickhead number 2";
+//echo "Dickhead number 2";
 ?>
 
 <html>
