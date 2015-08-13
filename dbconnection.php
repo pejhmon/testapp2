@@ -6,12 +6,7 @@
  * @version 1.0
  * @author pejhmon
  */
-// REST import
-$jsonURL = file_get_contents("nhs-json.azurewebsites.net/rest.json");
-$json = json_decode($jsonURL, true);
-echo $json['ServerName'];
-echo $json['ServerAdmin'];
-echo $json['ServerPassword'];
+
 // Server details
 $serverName = "appetite";
 $dbname = "testdb1";
