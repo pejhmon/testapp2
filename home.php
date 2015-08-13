@@ -10,6 +10,7 @@ echo $json['Server']['Name'];
 echo $json['Server'][Admin];
 echo $json[Server][Password];
 echo "Complete Dickhead";
+echo $jsonURL;
 
 foreach ($jsonIterator as $key => $val) {
     if(is_array($val)) {
