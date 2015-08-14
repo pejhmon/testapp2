@@ -14,7 +14,7 @@ $jsonURL = file_get_contents('http://nhs-json.azurewebsites.net');
 echo $jsonURL;
 //echo $json;
 
-print_r(explode(' ',$jsonURL,0));
+print_r(explode(' ',$jsonURL));
 
 foreach ($jsonIterator as $key => $val) {
     if(is_array($val)) {
