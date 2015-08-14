@@ -3,10 +3,9 @@
 $RESTstring = file_get_contents('http://nhs-json.azurewebsites.net');
 $RESTarray = explode(':::',$RESTstring);
 
-$servername = $RESTarray[1];
+$serverName = $RESTarray[1];
 $serverAdmin = $RESTarray[3];
 $serverPassword = $RESTarray[5];
-
 
 // Server details
 //$serverName = "appetite";
