@@ -5,13 +5,16 @@ require_once 'dbconnection.php';
 <?php
 // REST import
 $jsonURL = file_get_contents('http://nhs-json.azurewebsites.net');
-$json = json_decode($jsonURL, true);
-echo $json['Server']['Name'];
-echo $json['Server'][Admin];
-echo $json[Server][Password];
+
+//$json = json_decode($jsonURL, true);
+//echo $json['Server']['Name'];
+//echo $json['Server'][Admin];
+//echo $json[Server][Password];
 //echo "Complete Dickhead";
 echo $jsonURL;
-echo $json;
+//echo $json;
+
+print_r(explode(' ',$jsonURL,0));
 
 foreach ($jsonIterator as $key => $val) {
     if(is_array($val)) {
