@@ -1,17 +1,18 @@
 <?php
+// REST import
+$RESTstring = file_get_contents('http://nhs-json.azurewebsites.net');
+$RESTarray = explode(':::',$RESTstring);
 
-/**
- * dbconnection contains all of the connection functions required for the application.
- * 
- * @version 1.0
- * @author pejhmon
- */
+$servername = $RESTarray[1];
+$serverAdmin = $RESTarray[3];
+$serverPassword = $RESTarray[5];
+
 
 // Server details
-$serverName = "appetite";
+//$serverName = "appetite";
 $dbname = "testdb1";
-$serverAdmin = "app";
-$serverPassword = "Admin12£";
+//$serverAdmin = "app";
+//$serverPassword = "Admin12£";
 
 $serverID = $serverAdmin . "@" . $serverName;
 $server = "tcp:" . $serverName . ".database.windows.net,1433";
