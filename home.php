@@ -15,26 +15,18 @@ $RESTstring = file_get_contents('http://nhs-json.azurewebsites.net');
 //echo $json;
 
 $RESTarray = explode(':::',$RESTstring);
-echo $RESTarray[0];
-echo '<br/>';
+//echo $RESTarray[0];
+//echo '<br/>';
 echo $RESTarray[1];
 echo '<br/>';
-echo $RESTarray[2];
-echo '<br/>';
+//echo $RESTarray[2];
+//echo '<br/>';
 echo $RESTarray[3];
 echo '<br/>';
-echo $RESTarray[4];
-echo '<br/>';
+//echo $RESTarray[4];
+//echo '<br/>';
 echo $RESTarray[5];
 
-foreach ($jsonIterator as $key => $val) {
-    if(is_array($val)) {
-        echo "$key:\n";
-    } else {
-        echo "$key => $val\n";
-    }
-}
-//echo "Dickhead number 2";
 ?>
 
 <html>
