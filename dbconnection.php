@@ -21,6 +21,12 @@ $serverName     = $request->name;
 $serverAdmin    = $request->admin;
 $serverPassword = $request->password;
 
+echo $serverName;
+echo "<br/>";
+echo $serverAdmin;
+echo "<br/>";
+echo $serverPassword;
+echo "<br/>";
 /*
 // REST import
 $RESTstring = file_get_contents('http://nhs-json.azurewebsites.net');
