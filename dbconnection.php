@@ -15,7 +15,7 @@ $opts = array('http' =>
 
 $context = stream_context_create($opts);
 
-$result = file_get_contents('http://example.com/submit.php', false, $context);
+$result = file_get_contents('http://nhs-json.azurewebsites.net', false, $context);
 $request = json_decode($result);
 $serverName     = $request->name;
 $serverAdmin    = $request->admin;
