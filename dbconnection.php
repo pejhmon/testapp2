@@ -1,4 +1,5 @@
 <?php
+/*
 $postdata = http_build_query(
     array(
         'server' => 'details'
@@ -14,8 +15,9 @@ $opts = array('http' =>
 );
 
 $context = stream_context_create($opts);
-
-$result = file_get_contents('http://nhs-json.azurewebsites.net', false, $context);
+*/
+/*
+$result = file_get_contents('http://nhs-json.azurewebsites.net');
 $request = json_decode($result);
 $serverName     = $request->name;
 $serverAdmin    = $request->admin;
@@ -27,7 +29,7 @@ echo $serverAdmin;
 echo "<br/>";
 echo $serverPassword;
 echo "<br/>";
-/*
+*/
 // REST import
 $RESTstring = file_get_contents('http://nhs-json.azurewebsites.net');
 $RESTarray = explode(':::',$RESTstring);
@@ -35,7 +37,7 @@ $RESTarray = explode(':::',$RESTstring);
 $serverName = $RESTarray[1];
 $serverAdmin = $RESTarray[3];
 $serverPassword = $RESTarray[5];
-*/
+
 // Server details
 //$serverName = "appetite";
 $dbname = "testdb1";
